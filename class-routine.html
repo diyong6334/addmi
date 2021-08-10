@@ -1,0 +1,109 @@
+
+<div class="outter-wp">
+	<!--/tabs-->
+	<div class="tab-main">
+		<!--/tabs-inner-->
+		<div class="tab-inner">
+			<div id="tabs" class="tabs">
+				<h2 class="inner-tittle">Welcome, Diyong</h2>
+				<div class="graph">
+					<nav>
+						<ul>
+							<li><a href="#section-1" class="icon-shop"><i class="lnr lnr-briefcase"></i> <span>Class Information</span></a></li>
+							<li><a href="#section-2" class="icon-cup"><i class="lnr lnr-lighter"></i> <span>Results</span></a></li>
+							<li><a href="#section-3" class="icon-food"><i class="fa fa-cutlery"></i> <span>Teachers</span></a></li>
+							<li><a href="#section-4" class="icon-lab"><i class="fa fa-flask"></i> <span>Subject</span></a></li>
+							<li><a href="#section-5" class="icon-truck"><i class="fa fa-truck"></i> <span>Order</span></a></li>
+						</ul>
+					</nav>
+					<div class="content tab">
+						<section id="section-1">
+								<h2>Select Class</h2>
+
+					
+							
+								<form method="post">
+								<select name="class_data" id="selector1" class="form-control1">
+							<option>Select Class</option>
+												
+							<option value="">1</option>
+													
+											
+							</select>
+								<input type="submit" name="class_info" class="btn red" value="View Class Data">
+									</form>
+							
+							  <div class="graph">
+															<div class="tables">
+														
+						<table class="table table-bordered "> 
+							<thead> 
+								<tr> 
+									<th>#</th>
+									<th>Student Name</th> 
+									<th>Username</th>
+									<th>Roll</th>
+									<th>DOB</th>
+									<th>Address</th>
+									<th>Parents Contact</th>
+								</tr>
+							</thead>
+							<tbody> 
+								<?php
+								$c = 1;
+								 while($grade_st_info_display=$grade_st_infos->fetch_assoc())
+								 {
+								?>
+								<tr> 
+									<th scope="row">number</th>
+									<td>full name</td> 
+									<td>Student Nmae</td> 
+									<td>student roll</td>
+									<td>Student date Of Birth</td>
+									<td>Student Address</td> 
+									<td>Student parent contact</td>
+								</tr> 
+							</tbody>
+																</table> 
+															</div>
+													</div>
+						
+							
+							
+						</section>
+						<section id="section-2">
+							
+						</section>
+						<section id="section-3">
+
+
+						</section>
+						<section id="section-4">
+
+
+
+						</section>
+						<section id="section-5">
+						
+						</section>
+					</div>
+					<!-- /content -->
+				</div>
+				<!-- /tabs -->
+
+			</div>
+			<script src="js/cbpFWTabs.js"></script>
+			<script>
+				new CBPFWTabs(document.getElementById('tabs'));
+
+			</script>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//tabs-inner-->
+
+
+
+
+
+</div>
